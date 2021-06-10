@@ -8,7 +8,9 @@ import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Positive;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document("musica")
 public class Musica {
     @Id
     private String id;
