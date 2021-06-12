@@ -29,7 +29,6 @@ public class Musica {
     @Min(value = 1700, message = "Ano mínimo 1700 (mil e setecentos)")
     @NotNull(message = "o campo 'anoLancamento' não pode ser nulo.")
     @Positive(message = "Este campo é uma data(ano) e por isso deve conter somente algarismos positivos")
-    @PastOrPresent(message = "Não é permitido o preenchimento de um ano além do atual")
     private int anoLancamento;
     @NotEmpty(message = "Nenhum compositor foi inserido.")
     @NotBlank(message = "O campo 'compositor' está em branco e/ou não possui caracteres válidos")
